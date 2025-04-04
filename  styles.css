@@ -207,26 +207,3 @@ h2 {
 .alto-contraste #galeria {
   background-color: var(--alto-contraste-fundo) !important;
 }
-
-/* Estilo para o contêiner da imagem sobreposta */
-.img-container {
-  width: 100%;
-  max-width: 600px; /* Ajuste conforme necessário */
-}
-
-/* Estilo para a imagem de fundo */
-.img-fundo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  opacity: 0.8; /* Ajuste a opacidade se desejar */
-}
-
-/* Ajuste a imagem principal para ficar sobreposta */
-.img-inicio {
-  z-index: 2;
-  position: relative;
-}
