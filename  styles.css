@@ -1,38 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-:root {
-  --laranja-claro: #FF862A;
-  --alto-contraste-fundo: #000000;
-  --alto-contraste-texto: #ffffff;
-  --alto-contraste-link: #ffd700;
-}
-
-/* Base Styles */
 body {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Montserrat';
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Cor roxa para o cabeçalho */
 }
 
 section {
   padding-bottom: 5rem;
 }
 
-/* Navigation */
 .nav-link {
-  color: #CB6D43;
+  color: #6a2c91; /* Cor roxa para os links */
   font-weight: 600;
 }
 
-/* Hero Section */
 .inicio-fundo {
-  background-image: url('imagem/4965007.jpg');
+  background-image: url('img/roxo_estilo.jpg');
   background-size: cover;
   background-position: right;
   border-radius: 80px;
@@ -40,17 +28,18 @@ section {
   height: 606px;
   padding: 40px;
   margin: 0 auto;
-  position: relative;
 }
 
+/* Posicionamento e tamanho das imagens */
 .img-inicio {
   position: absolute;
   right: 0;
   top: 18rem;
-  width: 45rem;
+  width: 30rem; /* Ajuste de tamanho para imagens */
   height: auto;
 }
 
+/* Alteração da imagem da esquerda */
 .esquerda-conteudo {
   display: flex;
   flex-direction: column;
@@ -59,31 +48,26 @@ section {
 }
 
 .botao-inicio {
-  background-color: var(--laranja-claro);
+  background-color: #6a2c91; /* Cor roxa para o botão */
   border-radius: 30px;
   border: none;
   width: 14em;
   height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-weight: bold;
+  align-content: center;
+  color: white;
 }
 
 .display-4 {
-  text-shadow: -5px 5px var(--laranja-claro);
+  text-shadow: -5px 5px #9b4dca; /* Sombras roxas */
 }
 
-/* Tropicalia Section */
-#tropicalia {
+#olivia {
   position: relative;
   padding-top: 5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background: 
-    url('img/flor.png') top right no-repeat,
-    url('img/flor-esquerda.png') bottom left no-repeat;
+  background: url('img/flord.png') top right no-repeat,
+      url('img/flore.png') bottom left no-repeat;
   background-size: 180px 180px;
 }
 
@@ -95,27 +79,24 @@ section {
   z-index: 1;
 }
 
-/* Headings */
 h2 {
   font-family: 'Lemon', serif;
   font-size: 2.5em;
   font-style: normal;
-  color: var(--laranja-claro);
+  color: #6a2c91; /* Roxo para os títulos */
 }
 
-/* Gallery Section */
 #galeria {
-  background-color: #FAF4F4;
+  background-color: #f4ebf3; /* Cor de fundo suave em tons de roxo claro */
 }
 
 .fundo-galeria {
-  background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+  background: url('img/flord.png') bottom right no-repeat;
   background-size: 180px 180px;
 }
 
-/* Contact Section */
 #contato {
-  background-image: url('imagem/4965007.jpg');
+  background-image: url('img/roxo_estilo.jpg');
   background-size: cover;
   padding: 4rem 0;
 }
@@ -129,23 +110,16 @@ h2 {
 }
 
 .formulario button {
-  background-color: #CB6D43;
+  background-color: #9b4dca; /* Cor roxa para o botão */
   border: none;
   font-weight: bold;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .form-control {
-  background-color: #F1EDEF;
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  border-radius: 5px;
+  background-color: #f1edef;
 }
 
-/* Accessibility Menu */
 .menu-acessibilidade {
   position: fixed;
   top: 2rem;
@@ -153,7 +127,7 @@ h2 {
   z-index: 1000;
 }
 
-.rotacao-botao {
+.rotacao-botao { 
   transform: rotate(-90deg);
   transform-origin: right center;
 }
@@ -162,48 +136,50 @@ h2 {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .opcoes-acessibilidade button {
   margin-bottom: 5px;
-  padding: 0.5rem;
-  cursor: pointer;
 }
 
 .apresenta-lista {
   display: none;
 }
 
-/* High Contrast Mode */
 .alto-contraste {
-  background-color: var(--alto-contraste-fundo) !important;
-  color: var(--alto-contraste-texto) !important;
+  background-color: #4a0072; /* Roxo escuro para alto contraste */
+  color: #f4ebf3;
 }
 
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario {
-  background-color: var(--alto-contraste-fundo) !important;
-  color: var(--alto-contraste-texto) !important;
+  background-color: #4a0072; /* Roxo escuro */
+  color: #f4ebf3;
 }
 
 .alto-contraste .nav-link {
-  color: var(--alto-contraste-link) !important;
+  color: #ffffff; /* Link branco para alto contraste */
+}
+figure {
+  position: relative;
+  margin: 0;
 }
 
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button,
-.alto-contraste .btn-primary {
-  background-color: var(--alto-contraste-link) !important;
-  color: var(--alto-contraste-fundo) !important;
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.alto-contraste #tropicalia,
-.alto-contraste .fundo-galeria {
-  background: none !important;
-}
-
-.alto-contraste #galeria {
-  background-color: var(--alto-contraste-fundo) !important;
+figure:hover figcaption {
+  opacity: 1;
 }
