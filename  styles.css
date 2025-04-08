@@ -66,8 +66,8 @@ section {
   padding-top: 5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background: url('img/flord.png') top right no-repeat,
-      url('img/flore.png') bottom left no-repeat;
+  background: url('imagem/4965007.jpg') top right no-repeat,
+      url('imagem/4965007.jpg') bottom left no-repeat;
   background-size: 180px 180px;
 }
 
@@ -91,12 +91,12 @@ h2 {
 }
 
 .fundo-galeria {
-  background: url('img/flord.png') bottom right no-repeat;
+  background: url('imagem/4965007.jpg') bottom right no-repeat;
   background-size: 180px 180px;
 }
 
 #contato {
-  background-image: url('img/roxo_estilo.jpg');
+  background-image: url('imagem/4965007.jpg');
   background-size: cover;
   padding: 4rem 0;
 }
